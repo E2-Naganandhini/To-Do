@@ -1,93 +1,98 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>To Do List</title>
-    <link rel="stylesheet" href="app.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <h1>TO DO</h1>
-      </nav>
-    </header>
-    <main>
-      <button type="submit" id="add" class="add-btn">Add Task</button>
-      <div class="nav-bar">
-        <ul class="nav-btn">
-          <li>
-            <a class="btn totalTask active" id="total" href="#">Total Task</a>
-          </li>
-          <li>
-            <a class="btn completedTask" id="completed" href="#">Completed</a>
-          </li>
-          <li>
-            <a class="btn incompleteTask" id="incomplete" href="#"
-              >InComplete</a
-            >
-          </li>
-        </ul>
-      </div>
-      <div class="inputModel">
-        <div class="input-model-content">
-          <span class="inpClose">×</span>
-          <p class="addContent">Add Your Task</p>
-          <input
-            type="text"
-            id="editInp"
-            class="editInp"
-            spellcheck="false"
-            autocomplete="off"
-          />
-          <div class="addErr"></div>
-          <button class="inpUpdate">Add</button>
-          <button class="inpCancel">Cancel</button>
-        </div>
-      </div>
-      <div class="inputModel edit-model">
-        <div class="input-model-content edit-model-content">
-          <span class="inpClose edit-Close">×</span>
-          <p class="addContent edit-Content">Edit Your Task</p>
-          <input
-            type="text"
-            class="editInp edit-input"
-            spellcheck="false"
-            autocomplete="off"
-          />
-          <div class="addErr editErr"></div>
-          <button class="inpUpdate edit-update">Update</button>
-          <button class="inpCancel edit-cancel">Cancel</button>
-        </div>
-      </div>
-      <div class="container">
-        <ul class="todolist"></ul>
-      </div>
-      <div class="container2"></div>
-      <div class="container3"></div>
-      <div class="modal">
-        <div class="modalContent">
-          <span class="close">×</span>
-          <p class="delP"></p>
-          <button class="del1">Delete</button>
-          <button class="cancel1">Cancel</button>
-        </div>
-      </div>
-      <div class="modal1">
-        <div class="modalContent1">
-          <span class="close1">×</span>
-          <p>You Cannot edit the completed task</p>
-          <button class="ok">OK</button>
-        </div>
-      </div>
+	<head>
+		<title>To Do List</title>
+		<link rel="stylesheet" href="app.css" />
+	</head>
+	<body>
+		<header>
+			<nav>
+				<h1>TO DO</h1>
+			</nav>
+		</header>
+		<main>
+			<div>
+				<div>
+					<button type="submit" id="add" class="add-btn">
+						Add Task
+					</button>
+				</div>
+				<div class="nav-bar">
+					<ul class="nav-btn">
+						<li>
+							<a class="btn totalTask active" id="total" href="#"
+								>Total Task</a
+							>
+						</li>
+						<li>
+							<a class="btn completedTask" id="completed" href="#"
+								>Completed</a
+							>
+						</li>
+						<li>
+							<a
+								class="btn incompleteTask"
+								id="incomplete"
+								href="#"
+								>InComplete</a
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
 
-      <div class="notes">
-        <small>click on the task to mark your task as complete</small>
-      </div>
-      <div id="del"></div>
-    </main>
-    <script src="./app1.js"></script>
-  </body>
+			<div class="inputModel">
+				<div class="input-model-content">
+					<span class="inpClose">×</span>
+					<p class="addContent">Add Your Task</p>
+					<input
+						type="text"
+						id="editInp"
+						class="editInp"
+						spellcheck="false"
+						autocomplete="off"
+					/>
+					<div class="addErr"></div>
+					<button class="inpUpdate">Add</button>
+					<button class="inpCancel">Cancel</button>
+				</div>
+			</div>
+			<div class="inputModel edit-model">
+				<div class="input-model-content edit-model-content">
+					<span class="inpClose edit-Close">×</span>
+					<p class="addContent edit-Content">Edit Your Task</p>
+					<input
+						type="text"
+						class="editInp edit-input"
+						spellcheck="false"
+						autocomplete="off"
+					/>
+					<div class="addErr editErr"></div>
+					<button class="inpUpdate edit-update">Update</button>
+					<button class="inpCancel edit-cancel">Cancel</button>
+				</div>
+			</div>
+			<div class="container"></div>
+			<div class="modal">
+				<div class="modalContent">
+					<span class="close">×</span>
+					<p class="delP"></p>
+					<button class="del1">Delete</button>
+					<button class="cancel1">Cancel</button>
+				</div>
+			</div>
+			<div class="modal1">
+				<div class="modalContent1">
+					<span class="close1">×</span>
+					<p>You Cannot edit the completed task</p>
+					<button class="ok">OK</button>
+				</div>
+			</div>
+			<div class="notes">
+				<small>click on the task to mark your task as complete</small>
+			</div>
+			<div id="del"></div>
+		</main>
+		<script src="./app1.js"></script>
+	</body>
 </html>
